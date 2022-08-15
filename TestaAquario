@@ -1,0 +1,37 @@
+public class TestaAquario {
+    public static void main(String[] args) {
+    
+    Aquario anemona = new Aquario();
+    
+    Peixe p1 = new Peixe("Nemo", 5);
+    Peixe p2 = new Peixe("Nemo", 5);
+    Peixe p3 = new Peixe("Raia", 18);
+    Peixe p4 = new Peixe("Dori", 8);
+    Peixe p5 = new Peixe("Marlin", 6);
+    
+    anemona.adicionaPeixe(p1);
+    anemona.adicionaPeixe(p2);
+    anemona.adicionaPeixe(p3);
+    anemona.adicionaPeixe(p4);    
+    anemona.adicionaPeixe(p5);    
+        
+    System.out.println(p1);
+    System.out.println(p2);
+    System.out.println(p3);
+    System.out.println(p4);
+    System.out.println(p5);
+    if(p1.equals(p2)){
+        System.out.println("Peixes Iguais! ");
+    }
+    else{
+        System.out.println("Peixes Diferentes");
+    }
+    
+    
+    System.out.println(anemona.buscaPeixe(p4));
+    anemona.removePeixe(p3);
+    anemona.imprimePeixe();
+
+    }
+    
+}
